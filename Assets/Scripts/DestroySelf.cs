@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DestroySelf : MonoBehaviour
 {
-    private readonly float limit = Screen.width * 5;
+    public float limit = 10000;
 
     // Update is called once per frame
     void Update()
