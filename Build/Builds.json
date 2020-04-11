@@ -1,6 +1,6 @@
 {
 "companyName": "DefaultCompany",
-"productName": "Gravity Wars 2",
+"productName": "Gravity Simulator",
 "dataUrl": "Builds.data.unityweb",
 "wasmCodeUrl": "Builds.wasm.code.unityweb",
 "wasmFrameworkUrl": "Builds.wasm.framework.unityweb",
