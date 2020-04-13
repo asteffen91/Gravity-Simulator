@@ -381,7 +381,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensitivity: 2
   minView: 1
-  maxView: 1000
+  bgWidth: 100
 --- !u!1 &554550247
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +442,7 @@ GameObject:
   - component: {fileID: 554550251}
   - component: {fileID: 554550250}
   - component: {fileID: 554550249}
+  - component: {fileID: 554550253}
   m_Layer: 0
   m_Name: Nebula
   m_TagString: Untagged
@@ -458,7 +459,7 @@ Transform:
   m_GameObject: {fileID: 554550247}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 519420032}
   m_RootOrder: 0
@@ -535,6 +536,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554550247}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &554550253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554550247}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f539805b9038924daca8a1af3492ef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &766938418
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,6 +777,7 @@ GameObject:
   - component: {fileID: 1458445504}
   - component: {fileID: 1458445503}
   - component: {fileID: 1458445502}
+  - component: {fileID: 1458445506}
   m_Layer: 0
   m_Name: SmallStars
   m_TagString: Untagged
@@ -780,7 +794,7 @@ Transform:
   m_GameObject: {fileID: 1458445500}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 519420032}
   m_RootOrder: 1
@@ -857,6 +871,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458445500}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1458445506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458445500}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f539805b9038924daca8a1af3492ef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1627888416
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,6 +1171,7 @@ GameObject:
   - component: {fileID: 1978521114}
   - component: {fileID: 1978521113}
   - component: {fileID: 1978521112}
+  - component: {fileID: 1978521116}
   m_Layer: 0
   m_Name: BigStars
   m_TagString: Untagged
@@ -1161,7 +1188,7 @@ Transform:
   m_GameObject: {fileID: 1978521110}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 519420032}
   m_RootOrder: 2
@@ -1238,3 +1265,15 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978521110}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1978521116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978521110}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f539805b9038924daca8a1af3492ef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

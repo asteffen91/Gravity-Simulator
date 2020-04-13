@@ -7,7 +7,7 @@ public class ScrollUV : MonoBehaviour
     public float parallax;
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         MeshRenderer mr = GetComponent<MeshRenderer>();
 
