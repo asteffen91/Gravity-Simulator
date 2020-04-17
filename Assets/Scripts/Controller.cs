@@ -10,7 +10,7 @@ public class Controller : MonoBehaviour
     private LineRenderer lineRend;
 
     public float velScale;
-    private float mass = 1f;
+    private float mass = 50f;
 
     private Vector2 startPos;
     private Vector2 endPos;
