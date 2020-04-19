@@ -88,6 +88,25 @@ public class Controller : MonoBehaviour
 
             rb.mass = mass;
 
+            // Generate random color for body
+            float H = Random.Range(0f, 1f);
+            float S = Random.Range(0.5f, 1f);
+            float V = Random.Range(0.9f, 1f);
+
+            Color ballColor = Color.HSVToRGB(H, S, V);
+
+            // Give body random color
+            SpriteRenderer sr = ball.GetComponent<SpriteRenderer>();
+            sr.color = ballColor;
+
+            // Set trail renderer properties
+            Color trailColor = Color.HSVToRGB(H, S - 0.3f, V);
+            TrailRenderer tr = ball.GetComponent<TrailRenderer>();
+            tr.startColor = trailColor;
+
+            trailColor.a = 0;
+            tr.endColor = trailColor;
+
             lineRend.enabled = false;
             launching = false;
         }
